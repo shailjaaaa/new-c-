@@ -19,6 +19,7 @@ class hello
         cout<<"Static function call....."<<number<<endl;
     }
 };
+
 int hello::number=50;
 int main()
 {
@@ -30,6 +31,6 @@ int main()
 
     hello s3,s4;
     s3.Display();
-    
+
     return 0;
 }
