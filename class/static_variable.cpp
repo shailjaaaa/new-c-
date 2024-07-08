@@ -16,7 +16,8 @@ class hello
     }
     static void Display()
     {
-        cout<<"Static function call....."<<number<<endl;
+        cout
+        <<"Static function call....."<<number<<endl;
     }
 };
 
