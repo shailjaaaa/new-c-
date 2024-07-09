@@ -9,7 +9,7 @@ struct MenuItem {
     int quantity;
 
     // Constructor
-    MenuItem(string n = "", float p = 0.0, int q = 0) {
+    MenuItem(string n, float p = 0.0, int q = 0) {
         name = n;
         price = p;
         quantity = q;
@@ -37,16 +37,16 @@ void generateBill(MenuItem menu[], int numItems);
 int main() {
     const int MAX_ITEMS = 10;
     MenuItem menu[MAX_ITEMS] = {
-        MenuItem("1.Burger", 150),
-        MenuItem("2.Pizza", 250),
-        MenuItem("3.Pasta", 200),
-        MenuItem("4.Salad", 200),
-        MenuItem("5.Sandwich", 150),
-        MenuItem("6.Fries", 151),
-        MenuItem("7.Coke", 80),
-        MenuItem("8.Coffee", 200),
-        MenuItem("9.Tea", 10),
-        MenuItem("10.Ice Cream", 60)
+        MenuItem("1.Burger ", 150),
+        MenuItem("2.Pizza ", 250),
+        MenuItem("3.Pasta ", 200),
+        MenuItem("4.Salad ", 200),
+        MenuItem("5.Sandwich ", 150),
+        MenuItem("6.Fries ", 151),
+        MenuItem("7.Coke ", 80),
+        MenuItem("8.Coffee ", 200),
+        MenuItem("9.Tea ", 10),
+        MenuItem("10.Ice Cream ", 60)
     };
     int numItems = 10;
     int choice;
@@ -132,8 +132,8 @@ void orderItem(MenuItem menu[], int numItems) {
 void generateBill(MenuItem menu[], int numItems) {
     cout << "\n===== BILL =====" << endl;
     cout <<  "Item Name";
-    cout << "Quantity";
-    cout <<  "Price" << endl;
+    cout << "\tQuantity";
+    cout <<  "\tPrice" << endl;
     cout << "=================" << endl;
 
     float totalAmount = 0.0;
